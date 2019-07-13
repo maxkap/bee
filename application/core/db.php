@@ -56,6 +56,9 @@ class Db{
         return $this->connection->lastInsertId();
         
     }
+    public function query($sql) {                
+        return $this->connection->exec($sql);        
+    }
     
     
     
